@@ -1,0 +1,16 @@
+.margin-class {
+    margin: 10px;
+}
+
+.margin-class-20 {
+    margin: 20px;
+}
+
+tbody {
+    height: 350px;
+    overflow-y: auto;
+}
+
+thead>tr, tbody {
+    display: block;
+}
