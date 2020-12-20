@@ -1,6 +1,6 @@
 # Indian Movie Tracker
  
- ![](images/0.gif)
+ ![](images/0.jpg)
  
  # LIVE Application
- # https://indianmovietracker.web.app/
+ # https://ilaiyaraajamusictracker.web.app/
