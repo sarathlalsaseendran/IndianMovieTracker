@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 
 import { DataService } from './data.service';
 import { Movie, Actor, Industry } from './models';
+import { MongoService } from './mongo.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
   title = 'IndianMovieTracker';
@@ -28,9 +29,12 @@ export class AppComponent implements OnInit {
   groupedLanguages: any;
   groupedDirectors: any;
   groupedYears: any;
-  groupedActors:any;
+  groupedActors: any;
 
-  constructor(private service: DataService) { }
+  constructor(
+    private service: DataService,
+    private mongoService: MongoService
+  ) {}
 
   ngOnInit() {
     this.getMovies();
@@ -47,23 +51,18 @@ export class AppComponent implements OnInit {
   }
 
   getMovies() {
-    this.movies = this.service.getMovies();
-    // this.groupedActors = this.movies.reduce((p, c) => {
-    //   var name = c.Actor;
-    //   if (!p.hasOwnProperty(name)) {
-    //     p[name] = 0;
-    //   }
-    //   p[name]++;
-    //   return p;
-    // }, {});
+    this.mongoService.GetUser().subscribe((data: any) => {
+      this.movies = data;
+    });
   }
 
   onIndustrySelected() {
-    if (this.selectedIndustry == "All Industries") {
+    if (this.selectedIndustry == 'All Industries') {
       this.selectedActors = this.actors;
-    }
-    else {
-      this.selectedActors = this.actors.filter(x => x.Industry == this.selectedIndustry);
+    } else {
+      this.selectedActors = this.actors.filter(
+        (x) => x.Industry == this.selectedIndustry
+      );
     }
     this.selectedActor = undefined;
     this.selectedMovies = undefined;
@@ -72,7 +71,9 @@ export class AppComponent implements OnInit {
   }
 
   onActorSelected() {
-    this.selectedMovies = this.movies.filter(x => x.Actor == this.selectedActor);
+    this.selectedMovies = this.movies.filter(
+      (x) => x.Actor == this.selectedActor
+    );
     this.selectedMovies = this.selectedMovies.sort((a, b) => a.Year - b.Year);
     this.filteredMovies = this.selectedMovies;
     this.selectedLanguage = undefined;
@@ -105,39 +106,47 @@ export class AppComponent implements OnInit {
       p[name]++;
       return p;
     }, {});
-
   }
 
   onLanguageSelected() {
     this.selectedDirector = undefined;
     this.selectedYear = undefined;
-    if (this.selectedLanguage == 'All' || this.selectedLanguage == "undefined") {
+    if (
+      this.selectedLanguage == 'All' ||
+      this.selectedLanguage == 'undefined'
+    ) {
       this.filteredMovies = this.selectedMovies;
-    }
-    else {
-      this.filteredMovies = this.selectedMovies.filter(x => x.Language == this.selectedLanguage);
+    } else {
+      this.filteredMovies = this.selectedMovies.filter(
+        (x) => x.Language == this.selectedLanguage
+      );
     }
   }
 
   onDirectorSelected() {
     this.selectedLanguage = undefined;
     this.selectedYear = undefined;
-    if (this.selectedDirector == 'All' || this.selectedDirector == "undefined") {
+    if (
+      this.selectedDirector == 'All' ||
+      this.selectedDirector == 'undefined'
+    ) {
       this.filteredMovies = this.selectedMovies;
-    }
-    else {
-      this.filteredMovies = this.selectedMovies.filter(x => x.Director == this.selectedDirector);
+    } else {
+      this.filteredMovies = this.selectedMovies.filter(
+        (x) => x.Director == this.selectedDirector
+      );
     }
   }
 
   onYearSelected() {
     this.selectedLanguage = undefined;
     this.selectedDirector = undefined;
-    if (this.selectedYear == 'All' || this.selectedDirector == "undefined") {
+    if (this.selectedYear == 'All' || this.selectedDirector == 'undefined') {
       this.filteredMovies = this.selectedMovies;
-    }
-    else {
-      this.filteredMovies = this.selectedMovies.filter(x => x.Year == +this.selectedYear);
+    } else {
+      this.filteredMovies = this.selectedMovies.filter(
+        (x) => x.Year == +this.selectedYear
+      );
     }
   }
 }

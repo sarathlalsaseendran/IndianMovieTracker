@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "IndianMovieTracker"
+    }
+  },
+  "defaultProject": "IndianMovieTracker",
+  "cli": {
+    "analytics": false
+  }
 }
