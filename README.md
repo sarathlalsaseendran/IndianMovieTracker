@@ -3,4 +3,4 @@
  ![](images/0.gif)
  
  # LIVE Application
- # https://indianmovietracker.web.app/
+ # https://covid-19-indiatracker.web.app/
