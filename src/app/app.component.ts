@@ -51,7 +51,7 @@ export class AppComponent implements OnInit {
   }
 
   getMovies() {
-    this.mongoService.GetUser().subscribe((data: any) => {
+    this.mongoService.GetMovies().subscribe((data: any) => {
       this.movies = data;
     });
   }

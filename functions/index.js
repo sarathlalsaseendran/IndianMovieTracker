@@ -1,3 +1,11 @@
+// const functions = require('firebase-functions');
+// const express=require('express')
+
+// const app=express();
+// app.get('/timestamp',(req,res)=>{
+//     res.send('test');
+// })
+// exports.app = functions.https.onRequest(app);
 var express = require('express');  
 var path = require("path");   
 var bodyParser = require('body-parser');  
@@ -16,7 +24,7 @@ app.use(bodyParser.urlencoded({extended:true}));
    
   
 app.use(function (req, res, next) {        
-     res.setHeader('Access-Control-Allow-Origin', 'http://localhost:5000');    
+     res.setHeader('Access-Control-Allow-Origin', 'https://nodejsmongo-movietracker.firebaseapp.com/');    
      res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');    
      res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');      
      res.setHeader('Access-Control-Allow-Credentials', true);       
@@ -44,7 +52,7 @@ var UsersSchema = new Schema({
 },{ versionKey: false });  
   
 var model = mongo.model('IndianMovies', UsersSchema, 'IndianMovies');  
-   
+  
  app.get("/api/getMovies",function(req,res){  
     model.find({},function(err,data){  
               if(err){  
