@@ -3129,7 +3129,52 @@ export class DataService {
       "Role": "Chandrakanth Varma",
       "Director": "K. V. Anand",
       "Language": "Tamil"
-    }
+    },
+    {
+      "Industry": "Malayalam",
+      "Actor": "Mohanlal",
+      "Year": 2021,
+      "Title": "Drishyam 2",
+      "Role": "Georgekutty",
+      "Director": "Jeethu Joseph",
+      "Language": "Malayalam"
+    },
+    {
+      "Industry": "Malayalam",
+      "Actor": "Mohanlal",
+      "Year": 2021,
+      "Title": "Marakkar: Arabikadalinte Simham",
+      "Role": "Kunjali Marakkar",
+      "Director": "Priyadarshan",
+      "Language": "Malayalam"
+    },
+    {
+      "Industry": "Malayalam",
+      "Actor": "Mohanlal",
+      "Year": 2022,
+      "Title": "Bro Daddy",
+      "Role": "John Chacko Kattadi",
+      "Director": "Prithviraj Sukumaran",
+      "Language": "Malayalam"
+    },
+    {
+      "Industry": "Malayalam",
+      "Actor": "Mohanlal",
+      "Year": 2022,
+      "Title": "Aaraattu",
+      "Role": "Ganabushanam Neyyattinkara Gopan/Agent X",
+      "Director": "B. Unnikrishnan",
+      "Language": "Malayalam"
+    },
+    {
+      "Industry": "Malayalam",
+      "Actor": "Mohanlal",
+      "Year": 2022,
+      "Title": "12th Man",
+      "Role": "ACP Chandrashekhar IPS",
+      "Director": "Jeethu Joseph",
+      "Language": "Malayalam"
+    },
   ];
 
   private mammootty: Array<Movie> = [
@@ -6822,7 +6867,61 @@ export class DataService {
       "Role": "Anantha Rama Sharma",
       "Director": "K Vishwanath",
       "Language": "Telugu"
-    }
+    },
+    {
+      "Industry": "Malayalam",
+      "Actor": "Mammootty",
+      "Year": 2021,
+      "Title": "The Priest",
+      "Role": "Father Carmen Benedict",
+      "Director": "Jofin.T.Chacko",
+      "Language": "Malayalam"
+    },
+    {
+      "Industry": "Malayalam",
+      "Actor": "Mammootty",
+      "Year": 2021,
+      "Title": "One",
+      "Role": "Kadakkal Chandran",
+      "Director": "Santhosh Viswanath",
+      "Language": "Malayalam"
+    },
+    {
+      "Industry": "Malayalam",
+      "Actor": "Mammootty",
+      "Year": 2022,
+      "Title": "Bheeshma Parvam",
+      "Role": "Michael",
+      "Director": "Amal Neerad",
+      "Language": "Malayalam"
+    },
+    {
+      "Industry": "Malayalam",
+      "Actor": "Mammootty",
+      "Year": 2022,
+      "Title": "CBI 5: The Brain",
+      "Role": "Sethurama Iyer",
+      "Director": "K. Madhu",
+      "Language": "Malayalam"
+    },
+    {
+      "Industry": "Malayalam",
+      "Actor": "Mammootty",
+      "Year": 2022,
+      "Title": "Puzhu",
+      "Role": "Kuttan",
+      "Director": "Ratheena",
+      "Language": "Malayalam"
+    },
+    {
+      "Industry": "Malayalam",
+      "Actor": "Mammootty",
+      "Year": 2022,
+      "Title": "Priyan Ottathilanu",
+      "Role": "Himself",
+      "Director": "Antony Sony",
+      "Language": "Malayalam"
+    },
   ];
 
   private rajini: Array<Movie> = [
@@ -8454,6 +8553,15 @@ export class DataService {
       "Role": "Aaditya Arunachalam",
       "Language": "Tamil",
       "Director": "AR Murugadoss"
+    },
+    {
+      "Industry": "Tamil",
+      "Actor": "Rajini",
+      "Year": 2021,
+      "Title": "Annaatthe",
+      "Role": "Kaalaiyaan (Annaatthe)",
+      "Language": "Tamil",
+      "Director": "Siva"
     }
   ];
 
@@ -10527,6 +10635,15 @@ export class DataService {
       "Role": "Wisam Ahmed Kashmiri",
       "Language": "Hindi",
       "Director": "Kamal Haasan"
+    },
+    {
+      "Industry": "Tamil",
+      "Actor": "Kamal",
+      "Year": 2022,
+      "Title": "Vikram",
+      "Role": "Arun Kumar Vikram",
+      "Language": "Tamil",
+      "Director": "Lokesh Kanagaraj"
     }
   ];
 
@@ -11029,8 +11146,17 @@ export class DataService {
     {
       "Industry": "Hindi",
       "Actor": "Aamir",
+      "Title": "Koi Jaane Na",
+      "Year": 2021,
+      "Role": "Guest",
+      "Director": "Amin Hajee",
+      "Language": "Hindi"
+    },
+    {
+      "Industry": "Hindi",
+      "Actor": "Aamir",
       "Title": "Laal Singh Chaddha",
-      "Year": 2020,
+      "Year": 2022,
       "Role": "Laal Singh Chaddha",
       "Director": "Advait Chandan",
       "Language": "Hindi"
@@ -13161,6 +13287,42 @@ export class DataService {
       "Role": "Chunnan Mirza Nawab",
       "Director": "Shoojit Sircar",
       "Language": "Hindi"
+    },
+    {
+      "Industry": "Hindi",
+      "Actor": "Amitabh",
+      "Year": 2021,
+      "Title": "Chehre",
+      "Role": "Advocate Lateef Zaidi",
+      "Director": "Rumy Jafry",
+      "Language": "Hindi"
+    },
+    {
+      "Industry": "Hindi",
+      "Actor": "Amitabh",
+      "Year": 2022,
+      "Title": "Jhund",
+      "Role": "Vijay Borade",
+      "Director": "Nagraj Manjule",
+      "Language": "Hindi"
+    },
+    {
+      "Industry": "Hindi",
+      "Actor": "Amitabh",
+      "Year": 2022,
+      "Title": "Radhe Shyam",
+      "Role": "Narrator",
+      "Director": "Radha Krishna Kumar",
+      "Language": "Hindi"
+    },
+    {
+      "Industry": "Hindi",
+      "Actor": "Amitabh",
+      "Year": 2022,
+      "Title": "Runway 34",
+      "Role": "Narayan Vedant",
+      "Director": "Ajay Devgn",
+      "Language": "Hindi"
     }
   ];
 
@@ -13989,8 +14151,17 @@ export class DataService {
       "Actor": "Shahrukh",
       "Title": "The Zoya Factor",
       "Year": 2019,
-      "Role": "",
+      "Role": "Narrator",
       "Director": "Abhishek Sharma",
+      "Language": "Hindi"
+    },
+    {
+      "Industry": "Hindi",
+      "Actor": "Shahrukh",
+      "Title": "Rocketry: The Nambi Effect",
+      "Year": 2022,
+      "Role": "Himself",
+      "Director": "R. Madhavan",
       "Language": "Hindi"
     }
   ];
